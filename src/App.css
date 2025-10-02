@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center; 
+}
+.container{
+    display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  justify-content: center;  
+  gap: 1rem;                
+  width: 300px;
+  padding: 2rem;
+  background: #ffffff;      
+  border-radius: 16px;      
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.btns{
+  display: flex;
+  gap: 1.5rem;
+}
+.increment-btn{
+  background: #22c55e;       
+  color: #ffffff;            
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;       
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.increment-btn:hover {
+  background: #16a34a;      
+}
+
+.increment-btn:active {
+  transform: scale(0.95);   
+}
+
+.decrement-btn{
+  background: red;       
+  color: #ffffff;            
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;       
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.decrement-btn:hover {
+  background: red;      
+}
+
+.decrement-btn:active {
+  transform: scale(0.95);   
+}
+.count{
+  font-size: 3rem;
+  font-weight: 300;
+}
+.save-btn{
+   background: #000;       
+  color: #ffffff;            
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;       
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.save-btn:hover{
+   background: #000;
+}
+.save-count{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  border: 2px solid green;
+}
+.saved-items{
+  font-size: 1rem;
+  font-weight: 700;
+}
