@@ -15,7 +15,7 @@ export default function Counter() {
    }
     function handleSave(){
         if(count===0){
-             alert('Count is zero hence can not be saved')
+             alert('Count is zero and can not be saved, Increase to save.')
         }else{
             setSaveCount(item=>[...item, count + ", "])
             setCount(0)
@@ -23,6 +23,8 @@ export default function Counter() {
     }
     // localStorage.setItem('countLocal',saveCount);
     // const showStoredItems= localStorage.getItem('countLocal')
+
+    
   return (
     <section className='container' >
       <h1>Counter App</h1>
